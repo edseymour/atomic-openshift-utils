@@ -6,7 +6,6 @@
 masters
 nodes
 etcd
-lb
 
 # Set variables common for all OSEv3 hosts
 [OSEv3:vars]
@@ -56,9 +55,6 @@ openshift_hosted_registry_storage_nfs_options='*(rw,root_squash)'
 openshift_hosted_registry_storage_nfs_directory=/var/nfs
 
 openshift_use_dnsmasq=True
-
-[lb]
-openshift.192.168.124.241.xip.io
 
 # host group for masters
 [masters]
